@@ -88,32 +88,18 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### Racket template
-# gitignore template for the Racket language
-# website: http://www.racket-lang.org/
-
-# DrRacket autosave files
-*.rkt~
-*.rkt.bak
-\#*.rkt#
-\#*.rkt#*#
-
-# Compiled racket bytecode
-compiled/
-*.zo
-
-# Dependency tracking files
-*.dep
-
 ### VisualStudioCode template
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
 *.code-workspace
 
 # Local History for Visual Studio Code
 .history/
 
 .idea
+test_cases
+
+x.txt
