@@ -4,7 +4,6 @@
 (require parser-tools/lex
          parser-tools/yacc)
 
-(require "../utils.rkt")
 
 (require "../datatypes.rkt")
 (#%require "../datatypes.rkt")
@@ -13,7 +12,6 @@
   (parser
    (start Program)
    (end EOF)
-   ;    (error (lambda (x y z) (display-lines (list x y z))))
    (error void)
    (tokens
     LITERALS KWS OPS LOOP_KWS BOOL_KWS BOOL_OPS
@@ -109,13 +107,7 @@
     (Expressions ((Expressions COMMA Expression) (expressions $3 $1))
                  ((Expression) (expressions $1 (empty-expr)))
                  ))
-   ;    (debug "x.txt")
+   ;    (debug "parser-log.txt")
    ))
-
-(define (parse-scan prog-string)
-  ;   (display-return
-  (python-parser (lex-this prog-string))
-  ;    )
-  )
 
 (provide (all-defined-out))

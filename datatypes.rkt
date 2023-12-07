@@ -42,8 +42,5 @@
   (expressions (expr expression?) (rest-exprs expression*?))
   )
 
-
-;todo init_structure "Team"
-
 (provide (all-defined-out))
 (#%provide (all-defined))
